@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Event Feedback Portal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>Community Event Feedback</h1>
+
+    <!-- Phone Number -->
+    <label>Phone Number:</label>
+    <input type="text" id="phone" onblur="validatePhone()">
+    <span id="phoneMsg"></span>
+
+    <br><br>
+
+    <!-- Event Type -->
+    <label>Select Event:</label>
+    <select id="eventType" onchange="showFee()">
+        <option value="">Choose Event</option>
+        <option value="100">Music Show</option>
+        <option value="200">Workshop</option>
+        <option value="300">Sports Event</option>
+    </select>
+
+    <p id="feeDisplay"></p>
+
+    <!-- Image -->
+    <h3>Double Click Image to Enlarge</h3>
+
+    <img src="https://via.placeholder.com/200"
+         id="eventImage"
+         ondblclick="enlargeImage()"
+         alt="Event Image">
+
+    <br><br>
+
+    <!-- Feedback -->
+    <label>Feedback:</label><br>
+
+    <textarea id="feedback"
+              rows="5"
+              cols="40"
+              onkeyup="countCharacters()"></textarea>
+
+    <p>Characters Typed: <span id="charCount">0</span></p>
+
+    <!-- Submit -->
+    <button onclick="submitFeedback()">
+        Submit Feedback
+    </button>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

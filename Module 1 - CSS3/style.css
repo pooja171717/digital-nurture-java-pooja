@@ -1,0 +1,45 @@
+/* Page Styling */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 30px;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    color: darkblue;
+}
+
+input,
+select,
+textarea {
+    padding: 8px;
+    width: 300px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: green;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darkgreen;
+}
+
+/* Phone Validation Message */
+
+#phoneMsg {
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+/* Image Styling */
+
+#eventImage {
+    width: 200px;
+    border: 2px solid black;
+    transition: 0.5s;
+}
